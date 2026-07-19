@@ -1,0 +1,17 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# dependency / build dirs (none needed for this static site)
+node_modules/
+dist/
+.cache/
+
+# logs / env
+*.log
+.env
+.env.*

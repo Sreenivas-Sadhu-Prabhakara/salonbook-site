@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SalonBook — Your chair, always booked.</title>
+  <meta name="description" content="SalonBook turns rebooking into a habit. Track appointments, know exactly who is due for their next visit, and stop package balances from leaking. Rs 799/mo for salon and spa owners." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#hero">Skip to content</a>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#hero" aria-label="SalonBook home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <rect x="2" y="4" width="20" height="17" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M2 9h20" stroke="currentColor" stroke-width="2"/>
+            <path d="M7 2v4M17 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="16.5" cy="15" r="2.4" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand__word">SalonBook</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#insight">Insight</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="btn btn--sm" href="#pricing">Start free</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 1. HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">For salon &amp; spa owners in India</p>
+          <h1 class="hero__title">Your chair,<br /><span class="ink-accent">always booked.</span></h1>
+          <p class="hero__lead">
+            Half your regulars would come back — if someone reminded them at the right time.
+            SalonBook knows exactly when each client is due, and nudges them before they drift to the salon down the road.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--lg" href="#pricing">Book a demo chair</a>
+            <a class="btn btn--ghost btn--lg" href="#how">See how it works</a>
+          </div>
+          <p class="hero__note">Rs 799/mo &middot; No card to start &middot; Works on the phone in your apron pocket</p>
+        </div>
+
+        <!-- Signature: live cadence chip -->
+        <div class="hero__panel" aria-hidden="false">
+          <div class="cadence" id="cadence">
+            <div class="cadence__head">
+              <span class="dot"></span>
+              <span>Due for next visit</span>
+            </div>
+            <ul class="cadence__list" id="cadenceList">
+              <li class="cadence__row">
+                <span class="avatar" data-a>PS</span>
+                <span class="cadence__who"><b>Priya Sharma</b><em>Haircut &amp; blow-dry &middot; Bandra</em></span>
+                <span class="cadence__due">Due 2d ago</span>
+              </li>
+              <li class="cadence__row">
+                <span class="avatar" data-a>RM</span>
+                <span class="cadence__who"><b>Rahul Mehta</b><em>Beard trim &middot; Koramangala</em></span>
+                <span class="cadence__due">Due today</span>
+              </li>
+              <li class="cadence__row">
+                <span class="avatar" data-a>AK</span>
+                <span class="cadence__who"><b>Ananya Kulkarni</b><em>Spa facial &middot; Viman Nagar</em></span>
+                <span class="cadence__due">Due in 3d</span>
+              </li>
+            </ul>
+            <button class="cadence__send" id="nudgeBtn" type="button">
+              Nudge all 3 on WhatsApp
+            </button>
+            <p class="cadence__ghost" id="nudgeGhost" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. PROBLEM ===== -->
+    <section class="section problem" id="problem">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--center">The leak nobody measures</p>
+        <h2 class="section__title">You are running a rebooking business.<br />Your diary just can’t see it.</h2>
+        <p class="section__lead center">
+          A salon lives or dies on people coming <em>back</em>. But the way most owners run it, the coming-back part is left to luck.
+        </p>
+        <div class="cards-3">
+          <article class="card">
+            <div class="card__ic">📓</div>
+            <h3>The diary forgets</h3>
+            <p>A paper register tells you who came yesterday. It never tells you who was <em>supposed</em> to come this week and didn’t.</p>
+          </article>
+          <article class="card">
+            <div class="card__ic">💬</div>
+            <h3>WhatsApp is a mess</h3>
+            <p>Reminders live in your head and a hundred chat threads. The client who last came 6 weeks ago quietly slips away — and you never notice.</p>
+          </article>
+          <article class="card">
+            <div class="card__ic">🎟️</div>
+            <h3>Packages leak money</h3>
+            <p>You sold a 10-session package. How many sessions are left? Nobody’s sure — so staff give away sessions you already spent.</p>
+          </article>
+        </div>
+        <p class="problem__punch">
+          Every regular who forgets to rebook is <b>revenue you already earned</b>, walking out the door in someone else’s hands.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 3. INSIGHT ===== -->
+    <section class="section insight" id="insight">
+      <div class="wrap insight__grid">
+        <div>
+          <p class="eyebrow">The wedge</p>
+          <h2 class="insight__title">A salon is a <span class="mark">cadence</span> business.</h2>
+        </div>
+        <div class="insight__body">
+          <p>
+            A haircut is due again in 4 weeks. A root touch-up in 3. A spa facial every 6.
+            The whole game is one nudge — <b>“you’re due for your next visit”</b> — sent to the right person on the right day.
+          </p>
+          <p>
+            Get the cadence right and the chair fills itself. SalonBook does one thing obsessively well: it knows every client’s rhythm and never lets it break.
+          </p>
+          <p class="insight__stat">
+            <span class="big">4–6 wks</span>
+            <span class="lbl">the window where a regular either rebooks with you — or becomes someone else’s regular.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. HOW IT WORKS ===== -->
+    <section class="section how" id="how">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--center">How it works</p>
+        <h2 class="section__title center">Four steps. Then the book runs the book.</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <h3>Log the visit</h3>
+            <p>Mark the appointment done in the day view. Pick the service — say “Global Colour”.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <h3>We set the due date</h3>
+            <p>Each service carries its own rebook window. Last visit + that window = the exact day this client is due back.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <h3>The due list surfaces</h3>
+            <p>Every morning, SalonBook shows who’s due today, who’s overdue, and who’s coming up — sorted by urgency.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <h3>One tap to nudge</h3>
+            <p>Send a warm, ready-written reminder to the outbox. They rebook. The chair stays full.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 5. FEATURES ===== -->
+    <section class="section features" id="features">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--center">What’s inside</p>
+        <h2 class="section__title center">Built for the front desk, not the boardroom.</h2>
+        <div class="feat-grid">
+          <article class="feat">
+            <h3><span class="feat__tag">Day view</span> Appointment book</h3>
+            <p>Your whole day on one screen — chairs, times, services. No app-hopping, no double bookings.</p>
+          </article>
+          <article class="feat feat--hero">
+            <h3><span class="feat__tag">The engine</span> Rebooking cadence</h3>
+            <p>For every client: last visit + the service’s rebook window = a due date. The “due for next visit” list writes itself.</p>
+          </article>
+          <article class="feat">
+            <h3><span class="feat__tag">Outbox</span> One-tap nudges</h3>
+            <p>Reminders queue up ready to send. You approve; they go. No blank message to agonise over.</p>
+          </article>
+          <article class="feat">
+            <h3><span class="feat__tag">Ledger</span> Package balances</h3>
+            <p>Sell a 10-session package once; every visit decrements it automatically. Staff always see sessions left.</p>
+          </article>
+          <article class="feat">
+            <h3><span class="feat__tag">Discipline</span> No-show tracking</h3>
+            <p>Flag no-shows in a tap. Spot the repeat offenders and your true no-show rate at a glance.</p>
+          </article>
+          <article class="feat">
+            <h3><span class="feat__tag">The morning glance</span> Owner dashboard</h3>
+            <p>Today’s appointments, due-for-rebook count, package liability in rupees, and no-show rate — one screen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. PRODUCT PREVIEW ===== -->
+    <section class="section preview" id="preview">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--center">The morning glance</p>
+        <h2 class="section__title center">This is the first thing you see. Every day.</h2>
+
+        <div class="screen" role="img" aria-label="SalonBook dashboard showing today's appointments, clients due for rebooking, package balance liability and no-show rate with Indian names and rupee values">
+          <div class="screen__bar">
+            <span class="screen__dots"><i></i><i></i><i></i></span>
+            <span class="screen__url">app.salonbook.in &middot; Glow &amp; Co. Salon, Indiranagar</span>
+          </div>
+          <div class="screen__body">
+            <!-- KPI strip -->
+            <div class="kpis">
+              <div class="kpi">
+                <span class="kpi__lbl">Today’s appointments</span>
+                <span class="kpi__val">14</span>
+                <span class="kpi__sub">6 done &middot; 8 upcoming</span>
+              </div>
+              <div class="kpi kpi--accent">
+                <span class="kpi__lbl">Due for rebook</span>
+                <span class="kpi__val">23</span>
+                <span class="kpi__sub">9 overdue</span>
+              </div>
+              <div class="kpi">
+                <span class="kpi__lbl">Package liability</span>
+                <span class="kpi__val">Rs 1,84,500</span>
+                <span class="kpi__sub">across 47 clients</span>
+              </div>
+              <div class="kpi">
+                <span class="kpi__lbl">No-show rate</span>
+                <span class="kpi__val">6.2%</span>
+                <span class="kpi__sub">this month</span>
+              </div>
+            </div>
+
+            <div class="screen__cols">
+              <!-- Day view -->
+              <div class="panel">
+                <div class="panel__head">
+                  <h4>Today — Sat, 19 Jul</h4>
+                  <span class="pill">Chair 1 &amp; 2</span>
+                </div>
+                <ul class="daylist">
+                  <li class="appt appt--done">
+                    <span class="appt__time">10:00</span>
+                    <span class="appt__who">Meera Nair</span>
+                    <span class="appt__svc">Keratin &middot; Rs 4,500</span>
+                    <span class="tag tag--done">Done</span>
+                  </li>
+                  <li class="appt appt--done">
+                    <span class="appt__time">11:30</span>
+                    <span class="appt__who">Arjun Desai</span>
+                    <span class="appt__svc">Haircut &middot; Rs 600</span>
+                    <span class="tag tag--done">Done</span>
+                  </li>
+                  <li class="appt">
+                    <span class="appt__time">13:00</span>
+                    <span class="appt__who">Sneha Reddy</span>
+                    <span class="appt__svc">Global colour &middot; Rs 3,200</span>
+                    <span class="tag">Next</span>
+                  </li>
+                  <li class="appt">
+                    <span class="appt__time">14:15</span>
+                    <span class="appt__who">Fatima Sheikh</span>
+                    <span class="appt__svc">Spa facial &middot; pkg</span>
+                    <span class="tag tag--pkg">Package</span>
+                  </li>
+                  <li class="appt">
+                    <span class="appt__time">16:00</span>
+                    <span class="appt__who">Vikram Iyer</span>
+                    <span class="appt__svc">Beard sculpt &middot; Rs 450</span>
+                    <span class="tag">Upcoming</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Due for rebook -->
+              <div class="panel panel--due">
+                <div class="panel__head">
+                  <h4>Due for next visit</h4>
+                  <span class="pill pill--accent">9 overdue</span>
+                </div>
+                <ul class="duelist">
+                  <li class="due">
+                    <span class="avatar avatar--sm">LK</span>
+                    <span class="due__who"><b>Lakshmi Krishnan</b><em>Root touch-up &middot; JP Nagar</em></span>
+                    <span class="due__badge due__badge--over">12d over</span>
+                  </li>
+                  <li class="due">
+                    <span class="avatar avatar--sm">TG</span>
+                    <span class="due__who"><b>Tanvi Gupta</b><em>Haircut &middot; HSR Layout</em></span>
+                    <span class="due__badge due__badge--over">4d over</span>
+                  </li>
+                  <li class="due">
+                    <span class="avatar avatar--sm">AB</span>
+                    <span class="due__who"><b>Aditya Bhat</b><em>Beard trim &middot; Whitefield</em></span>
+                    <span class="due__badge">Due today</span>
+                  </li>
+                  <li class="due">
+                    <span class="avatar avatar--sm">RN</span>
+                    <span class="due__who"><b>Riya Nadkarni</b><em>Spa facial &middot; 3 of 6 left</em></span>
+                    <span class="due__badge">in 2d</span>
+                  </li>
+                </ul>
+                <button class="due__cta" type="button" tabindex="-1">Nudge overdue on WhatsApp →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="preview__cap">Sample data. Real names, real areas, real rupees — because that’s what your book actually looks like.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. PRICING ===== -->
+    <section class="section pricing" id="pricing">
+      <div class="wrap pricing__grid">
+        <div class="pricing__copy">
+          <p class="eyebrow">Pricing</p>
+          <h2 class="section__title">One price. The whole book.</h2>
+          <p class="pricing__lead">
+            SalonBook costs less than one lost regular. If it brings back <b>three</b> clients a month who’d otherwise have drifted, it’s paid for itself many times over.
+          </p>
+          <ul class="pricing__roi">
+            <li><span>↩</span> One recovered Rs 3,200 colour client = <b>4 months</b> of SalonBook.</li>
+            <li><span>🎟️</span> Plug package leakage and reclaim thousands in “free” sessions.</li>
+            <li><span>📵</span> Cut no-shows with reminders that actually go out.</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <p class="plan__name">SalonBook</p>
+          <p class="plan__price"><span class="plan__cur">Rs</span>799<span class="plan__per">/mo</span></p>
+          <p class="plan__tag">Everything, one salon. Add chairs free.</p>
+          <ul class="plan__list">
+            <li>Appointment day view</li>
+            <li>Rebooking cadence engine</li>
+            <li>Due-for-visit list + nudge outbox</li>
+            <li>Package &amp; session balances</li>
+            <li>No-show tracking</li>
+            <li>Owner dashboard</li>
+          </ul>
+          <a class="btn btn--lg btn--block" href="#pricing">Start free for 14 days</a>
+          <p class="plan__fine">No card to start. Cancel any time in one tap.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. WHO IT'S FOR + FAQ ===== -->
+    <section class="section who" id="who">
+      <div class="wrap who__grid">
+        <div class="who__side">
+          <p class="eyebrow">Who it’s for</p>
+          <h2 class="section__title">If you run a chair, it’s for you.</h2>
+          <ul class="who__list">
+            <li>Neighbourhood unisex salons</li>
+            <li>Ladies’ beauty parlours &amp; studios</li>
+            <li>Men’s grooming &amp; barbershops</li>
+            <li>Day spas &amp; wellness centres</li>
+            <li>Nail, brow &amp; skin studios</li>
+            <li>2–8 chair owner-run shops</li>
+          </ul>
+        </div>
+        <div class="faq">
+          <p class="eyebrow">Common questions</p>
+          <details class="qa" open>
+            <summary>Do my clients need to install anything?</summary>
+            <p>No. You run SalonBook; nudges reach clients on plain WhatsApp and SMS. They just get a friendly reminder and reply to rebook.</p>
+          </details>
+          <details class="qa">
+            <summary>I already have everything in a paper diary. Is switching a headache?</summary>
+            <p>Start fresh from today — no migration needed. Log visits as they happen and within a few weeks the due list fills itself. Most owners are running by day two.</p>
+          </details>
+          <details class="qa">
+            <summary>How does it decide when someone is “due”?</summary>
+            <p>Every service has a default rebook window — a haircut around 4 weeks, colour around 3, a facial around 6. Last visit plus that window is the due date. You can tweak any window to match your salon.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 9. FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__word">SalonBook</span>
+        <p>Your chair, always booked.</p>
+      </div>
+      <div class="footer__meta">
+        <p class="footer__studio">A <b>KARYA</b> studio build</p>
+        <a href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <span>&copy; 2026 SalonBook</span>
+      <span>Rs 799/mo &middot; Made for Indian salons</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
