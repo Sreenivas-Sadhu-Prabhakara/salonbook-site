@@ -3,7 +3,7 @@
 A standalone marketing / explainer page for **SalonBook**, the appointment
 and rebooking tool for Indian salon and spa owners.
 
-> **Your chair, always booked.** — Rs 799/mo
+> **Your chair, always booked.** — subscription · pricing on discovery
 
 This is **not** the product UI. It is a polished, single-page explainer built to
 make the idea instantly clear to (a) a non-technical salon owner and
